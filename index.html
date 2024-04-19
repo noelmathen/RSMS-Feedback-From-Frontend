@@ -92,7 +92,6 @@
         document.getElementById("feedbackForm").addEventListener("submit", function(event) {
             event.preventDefault();
             const formData = new FormData(this);
-            const API_ENDPOINT = process.env.API_ENDPOINT;
             fetch('https://noelmathen03.pythonanywhere.com/api/feedback/', {
                 method: 'POST',
                 body: formData
